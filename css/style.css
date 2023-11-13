@@ -1,0 +1,228 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el fondo de la página */
+body {
+    background-color: #5488bf5e;/* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajustar la imagen de fondo al tamaño de la ventana del navegador */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-attachment: fixed; /* Fijar la imagen de fondo para mantenerla en su lugar */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+
+/* Estilo para el contenido superpuesto */
+#arriba, .principal, .fuente-quicksand, h2, form, .img-general, video, iframe {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para el contenido */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    margin: 20px; /* Márgenes alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados para el contenido */
+}
+
+.container-video{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.img-general{
+    align-items: center;
+    background-color:transparent;
+}
+
+.img-general img{
+    border-radius: 10px;
+}
+
+/* Alinear el contenido en el centro de la página */
+#arriba, .principal, .fuente-quicksand, h2, form, .img-general, video, a {
+    text-align: center;
+}
+
+@font-face {
+    font-family: PhilosopherItalic;
+    src: url(../font/Philosopher-Italic.ttf);
+}
+@font-face {
+    font-family: QuicksandRegular;
+    src: url(../font/Quicksand-Regular.ttf);
+}
+/* Estilo general para la navegación */
+nav {
+    background-color: #bfd1d9; /* Color de fondo */
+    padding: 10px 0; /* Espaciado interior superior e inferior */
+    margin: 15px;
+    border-radius: 10px;
+}
+
+/* Estilo de la lista no ordenada dentro de la navegación */
+nav ul {
+    list-style: none; /* Quitar los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mostrar elementos en línea horizontalmente */
+    justify-content: center; /* Centrar elementos horizontalmente */
+}
+
+/* Estilo de los elementos de la lista */
+nav li {
+    margin: 0 30px; /* Espacio entre elementos de la lista */
+}
+
+/* Estilo de los enlaces */
+nav a {
+    text-decoration: none; /* Quitar subrayado por defecto de los enlaces */
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s; /* Transición de color suave */
+}
+
+/* Estilo de los enlaces al pasar el ratón */
+nav a:hover {
+    color: white; /* Cambiar color al pasar el ratón (amarillo en este ejemplo) */
+}
+
+.principal{
+    color: #5488BF;
+    font-size: 50px;
+    font-family: PhilosopherItalic
+}
+.borde-redondo{
+    border-radius: 15px;
+
+}
+.fuente-quicksand{
+    font-family: QuicksandRegular
+}
+.text-nav{
+    color: #5488BF;
+    font-size: 20px;
+    font-family: PhilosopherItalic
+}
+
+/* Estilo general para el contenedor div */
+div {
+    text-align: center; /* Centrar el contenido horizontalmente */
+    position: relative; /* Posición relativa para el posicionamiento absoluto del logo */
+    background-color: #fedea248;
+}
+
+/* Estilo para el logo */
+.logo-img {
+    width: 115px;
+    margin: 5px;
+    position: absolute;
+    top: -10px; /* Posición desde la parte superior */
+    right: 0px; /* Posición desde la parte derecha */
+    left: 0px; /* Posición desde la parte derecha */
+}
+
+.titulo-cabecera{
+    font-size: 60px;
+    font-family: PhilosopherItalic
+}
+.subti-cabecera{
+    font-size: 25px;
+    font-family: PhilosopherItalic
+}
+
+/* Estilo para la galería de fotos */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border: 2px solid #5488BF;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el banner */
+.banner {
+    width: 100%; /* Ancho completo del banner */
+    max-height: 400px; /* Altura máxima del banner (ajusta según tus necesidades) */
+    object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+    display: block;
+    border: none; /* Quitar el borde */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del banner */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Fondo de color oscuro */
+    color: #fff; /* Texto en color blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+footer p {
+    font-size: 16px; /* Tamaño del texto */
+    margin: 5px 0; /* Márgenes alrededor de los párrafos */
+}
+
+footer a {
+    color: #5488BF; /* Enlaces en color azul claro */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    transition: color 0.3s; /* Transición de color suave */
+}
+
+footer a:hover {
+    color: #fff; /* Cambiar color al pasar el ratón a blanco */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        background-color: #F9F5F6; /* Cambiar el color de fondo a blanco */
+    }
+    header div{
+        display: flex;
+        flex-direction: column;
+    }
+    .botones, .botones ul{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-img {
+        position: unset;
+    }
+    .container-img{
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        justify-content: center;
+        gap: 20px;
+    }
+        .banner {
+            max-height: 200px; /* Reducir la altura del banner */
+        }
+    
+        .principal {
+            font-size: 30px; /* Reducir el tamaño de fuente del título principal */
+        }
+    
+        .fuente-quicksand {
+            font-size: 16px; /* Reducir el tamaño de fuente del texto */
+            background-color: #5488bf5e
+        }
+    
+        .img-general img {
+            width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+        }
+
+    }

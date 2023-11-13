@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistas del Sur</title>
+    <link rel="shortcut icon" href="./img/Vistas_del_Sur_Logo.png"> 
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/grid.css"> 
+    <!--No tengo linkeado el bootsrtrap porque se me rompe todo -->
+</head>
+<body> 
+    <header id="arriba"> 
+        <div class="div-celu">
+            <div class="container-img">
+                <h1 class="titulo-cabecera"> Vistas del Sur </h1> 
+                <img src="./img/Vistas_del_Sur_Logo.png" alt="Logo" class="logo-img"></img> 
+                <h1 class="subti-cabecera"> Mar del Plata</h1>
+            </div>
+            
+            
+        </div>
+        <!-- Menu de Navegación -->
+        <nav class="botones"> 
+            <ul>
+                <li> <a href="./pages/contacto.html" target="_blank" class="text-nav">Contacto</a> </li>
+                <li> <a href="./pages/Nosotros.html" target="_blank" class="text-nav">Nosotros</a> </li>
+                <li> <a href="./pages/como_llegar.html" target="blank" class="text-nav">Como Llegar</a> </li>
+                <li> <a href="./pages/Habitaciones.html" target="blank" class="text-nav">Habitaciones</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <img src="./img/Banner.png" class="banner" alt="Banner">
+        <!-- Encabezado -->
+        <h1 class="principal"> Bienvenidos a Vistas del Sur </h1>
+        <p class="fuente-quicksand"> Vistas del Sur es un complejo para hospedaje moderno, pero que a su vez combina en sus monoambientes diversos estilos de diseños
+            tales como el Escandinavo y Minimalista, ideal y amistoso para un público de todas las edades.
+            Con fines turisticos o ejecutivos, nosotros te recibimos de la manera mas cálida y comprensiva posible, a través de tu consulta y
+            posible reserva, adaptamos tu estadía acorde a la disponibilidad y fines que vengas a desempeñar.
+        </p>
+        <!-- Formulario de Reserva -->
+            <h2 class="principal">Reserva tu estadía</h2>
+        <form action="procesar_formulario.php" method="post">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            
+            <label for="fechas_disponibles">Fechas Disponibles:</label>
+            <input type="date" id="fechas_disponibles" name="fechas_disponibles" required>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    <div class="img-general">
+        <img src="./img/Propaganda 1.png"  alt="propaganda">
+    </div>
+    <div class="container-video">
+        <video width="480" height="360" controls> 
+            <source src="./video/VdS3.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br> 
+    <!-- Footer -->
+    <footer>
+        <p>Teléfono: +54 9 223 446-0861</p>
+        <p>Dirección: Av. de los Trabajadores 5085, Mar del Plata</p>
+        <p>Instagram: <a href="https://www.instagram.com/vistasdelsurmdq/" target="_blank">Instagram</a></p>
+        <a href="#arriba"> Ir Arriba </a>
+    </footer>
+    
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
